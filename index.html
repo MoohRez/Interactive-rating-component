@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive rating component</title>
+  </head>
+  <link rel="stylesheet" href="./css/general.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="continer">
+      <div class="star-continer">
+        <img class="star-icon" src="./image/icon-star.svg" alt="" />
+      </div>
+      <div class="box-inf">
+        <p class="bold">How did we do?</p>
+        <p class="disc">
+          Please let uskhnow how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <div class="btn-number-continer">
+        <button id="button" onclick="numstar(1)" class="btn">1</button>
+        <button id="button" onclick="numstar(2)" class="btn">2</button>
+        <button id="button" onclick="numstar(3)" class="btn">3</button>
+        <button id="button" onclick="numstar(4)" class="btn">4</button>
+        <button id="button" onclick="numstar(5)" class="btn">5</button>
+      </div>
+      <div class="submit-btn-continer">
+        <button id="sub" onclick="result()" class="submit-btn">SUBMIT</button>
+      </div>
+    </div>
+    <script>
+      let number;
+      let text;
+      function numstar(button) {
+        number = button;
+        text = number.toString();
+        sessionStorage.setItem("rate", text);
+      }
+      function result() {
+        window.location.href = './thanks.html';
+        // make link to css file
+        // let cssFile = document.createElement("link");
+        // cssFile.rel = "stylesheet";
+        // cssFile.href = "./style.css"; // or path for file {themes('/styles/mobile.css')}
+        // document.body.innerText = "";
+        // //create a div box
+        // const tnxbox = document.createElement("div");
+        // tnxbox.className = "thanksbox";
+        // document.body.appendChild(tnxbox);
+        // // create div and img into it
+        // const imgcontiner = document.createElement("div");
+        // imgcontiner.className = "image-continer";
+        // tnxbox.appendChild(imgcontiner);
+        // //img
+        // const photo = document.createElement("img");
+        // photo.src = "./image/illustration-thank-you.svg";
+        // photo.className = "phone-img";
+        // imgcontiner.appendChild(photo);
+        // // create a div and message
+        // const div = document.createElement('div');
+        // div.className = "message-continer";
+        // tnxbox.appendChild(div);
+        // //message
+        // const para = document.createElement
+      }
+    </script>
+  </body>
+</html>
