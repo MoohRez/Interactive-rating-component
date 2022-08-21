@@ -1,0 +1,139 @@
+.continer{
+    background-color: rgba(31,38,48,255);
+    width: 410px;
+    height: 400px;
+    margin: 150px auto 150px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /* row-gap: ; */
+    border-style: none;
+    border-radius: 20px;
+}
+.star-continer{
+    background-color: rgba(40,47,57,255);
+    width: 45px;
+    height: 45px;
+    border-radius: 27px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.star-icon{
+    padding-left: 14px;
+    padding-top: 14px;
+}
+.box-inf{
+    padding-left: 27px;
+}
+.bold{
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+    
+}
+.disc{
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    width: 330px; 
+}
+.btn-number-continer{
+    padding-left: 30px;
+    padding-top: 15px;
+
+}
+.btn{
+    margin-right: 20px;
+    width: 50px;
+    height: 45px;
+    border-style: none;
+    border-radius: 25px;
+    font-family: Overpass;
+    background-color:rgba(38,47,56,255);
+    color: hsl(216, 12%, 54%) ;
+    font-family: Overpass;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition:  background-color 0.3s,
+    color 0.3s ;
+}
+.btn:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+.btn:focus{
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+.submit-btn-continer{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.submit-btn{
+    width: 346px;
+    height: 40px;
+    background-color: hsl(25, 97%, 53%);
+    border-style: none;
+    border-radius: 35px;
+    color: white;
+    font-family:Overpass ;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition:  background-color 0.3s,color 0.3s ;
+}
+.submit-btn:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+.thanksbox{
+    background-color: rgba(31,38,48,255);
+    width: 410px;
+    height: 400px;
+    margin: 150px auto 150px auto;
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    border-radius: 20px;
+}
+.image-continer{
+    margin-top: 40px;
+    margin-left: 112px;
+    margin-bottom: 25px;
+}
+.phone-img{
+
+}
+.message-continer{
+    background-color: rgba(40,47,57,255);
+    width: 200px;
+    height: 30px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    border-style: none;
+    border-radius: 25px;
+}
+/* message style */
+.rate-star{
+    color:#de7c36;
+    margin-left: 17px;
+    margin-top: 6px;  
+    font-weight: 400;
+
+}
+.Thank-bold{
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+    margin-left: 120px;   
+}
+.disc-thank{
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    width: 340px; 
+    margin-left: 8px;
+    text-align: center;
+}
