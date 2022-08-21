@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thanks</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <div class="thanksbox">
+      <div class="image-continer">
+        <img
+          class="phone-img"
+          src="./image/illustration-thank-you.svg"
+          alt=""
+        />
+      </div>
+      <div class="message-continer">
+        <p id="rating" class="rate-star">
+
+        </p>
+      </div>
+      <div class="box-inf">
+        <p class="Thank-bold">Thank you!</p>
+        <p class="disc-thank">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support. don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+    <script>
+      let text_rate = sessionStorage.getItem("rate");
+      document.getElementById('rating').innerHTML= "You selected " + text_rate + " out of 5";
+      const message =  document.getElementById('rating').innerHTML;
+      let element = document.getElementById('message-continer');
+      element.appendChild(message); 
+    </script>
+  </body>
+</html>
